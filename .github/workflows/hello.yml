@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Say Hello to Me
-        uses: jwanderson1326/my-second-action@v1
+        uses: ../../actions
         with:
           who-to-greet: "JUSTIN"
 
