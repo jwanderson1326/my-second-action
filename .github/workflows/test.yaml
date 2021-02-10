@@ -1,4 +1,4 @@
-name: Deploy Miniflow
+name: Testing
 
 on:
   issue_comment:
@@ -6,10 +6,10 @@ on:
   pull_request:
     types: [opened]
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
