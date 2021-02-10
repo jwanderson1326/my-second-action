@@ -4,13 +4,7 @@ inputs:
   github_context:
     description: 'The context of the workflow run'
     required: true
-  token:
-    description: 'The github token'
-    required: true
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.github_context }}
-
