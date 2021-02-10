@@ -9,7 +9,7 @@ on:
       - main
   push:
     branches:
-      - main
+      - "*"
 
 jobs:
   test:
