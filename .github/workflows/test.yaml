@@ -1,0 +1,25 @@
+name: Deploy Miniflow
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [opened]
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get PR author when it's a PR
+      run: |
+        echo $GITHUB_EVENT_NAME
+        echo $GITHUB_EVENT_PATH
+
+
