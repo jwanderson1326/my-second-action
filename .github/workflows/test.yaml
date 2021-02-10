@@ -17,9 +17,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Get PR author when it's a PR
+    - name: Testing
       run: |
         echo $GITHUB_EVENT_NAME
         echo $GITHUB_EVENT_PATH
+        cat $GITHUB_EVENT_PATH
 
 
