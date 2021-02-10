@@ -1,8 +1,8 @@
 name: 'Configure Env'
 description: 'Configures Environment Properly'
 inputs:
-  github_context:
-    description: 'The context of the workflow run'
+  token:
+    description: 'Github token'
     required: true
 
 runs:
