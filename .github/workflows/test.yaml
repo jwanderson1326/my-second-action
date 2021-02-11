@@ -22,4 +22,5 @@ jobs:
       uses: ./
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        user: jwanderson1326
 

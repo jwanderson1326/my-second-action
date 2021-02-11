@@ -4,6 +4,10 @@ inputs:
   token:
     description: 'Github token'
     required: true
+  user:
+    description: 'User for connecting to Github API'
+    required: false
+    default: kip-automation
 
 runs:
   using: 'docker'
