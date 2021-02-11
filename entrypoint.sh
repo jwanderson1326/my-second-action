@@ -8,6 +8,5 @@ if [[ $GITHUB_EVENT_NAME == "push" ]]; then
   export REF=$GITHUB_REF
 elif [[ $GITHUB_EVENT_NAME == 'pull_request' ]]; then
   cat $GITHUB_EVENT_PATH | jq '.head.sha'
-  echo $SHA
   echo $GITHUB_SHA
 fi
