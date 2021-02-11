@@ -19,8 +19,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Testing
+      id: set_env
       uses: ./
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         user: jwanderson1326
+
+    - name: Use Env
+      run: |
+        echo ${{ steps.set_env.outputs.env}}
+        echo ${{ steps.set_env.outputs.sha}}
+        echo ${{ steps.set_env.outputs.ref}}
 
